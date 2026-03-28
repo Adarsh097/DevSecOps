@@ -1,4 +1,4 @@
-# DevSecOps for Git
+# DevSecOps for Git and Practices
 
 ## Contents
 
