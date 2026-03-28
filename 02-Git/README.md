@@ -219,6 +219,8 @@ Best practices:
 
 ## Dependabot
 
+![alt text](image.png)
+
 ```yaml
 version: 2
 updates:
