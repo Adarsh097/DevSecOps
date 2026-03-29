@@ -1,4 +1,5 @@
 # Securing Containers
+![alt text](image.png)
 
 This repository is a **hands-on, beginner-friendly guide** to securing containers.
 
@@ -91,6 +92,9 @@ User ID: 0
 
 ---
 
+![alt text](image-1.png)
+
+
 ## STEP 2: Run as Non-Root User (Reduce Blast Radius)
 
 Before optimizing images, the **first real security fix** is to
@@ -138,10 +142,26 @@ docker run -p 3000:3000 nonroot-app
 Output:
 
 ```
+docker run -it imageName sh
+
+id -> give the id of the user
+
+root -> 0
+
+
 User ID: 1000
 ```
 
 👉 The app now runs as a **non-root user**.
+
+- You can't perform root user tasks
+
+```
+apt install x
+
+sudo apt install x
+
+```
 
 ⚠️ Still not secure:
 - Image is large
@@ -161,7 +181,9 @@ Without it:
 - `.env` files may leak secrets
 - `node_modules` bloats images
 
----
+
+![ ](image-2.png)
+
 
 ### .dockerignore
 
