@@ -49,7 +49,7 @@ Namespaces help with:
 > Kubernetes security always starts with namespaces.
 
 ---
-
+![alt text](image.png)
 ## Hands-On: Creating Namespaces
 
 Create namespaces for teams/projects:
@@ -120,6 +120,9 @@ RBAC answers:
 * **ClusterRoleBinding**: Binds ClusterRole to a subject
 
 ---
+![alt text](image-1.png)
+
+- kubectl edit podName -n namespace -> serviceAccount = default
 
 ## Hands-On: Create a Read-Only Role for Pods
 
@@ -352,7 +355,7 @@ wget -qO- backend-svc
 This should fail.
 
 ---
-
+![alt text](image-2.png)
 # 4. Kyverno (Policy as Code)
 
 ## What is Kyverno?
